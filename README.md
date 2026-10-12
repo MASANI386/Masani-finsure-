@@ -51,7 +51,7 @@ footer{background:#0b2a5a;color:#fff;text-align:center;padding:15px;margin-top:2
 
 <div class="contact" id="contact">
 <h2>Contact - Masani Finsure</h2>
-<p>Petlawad, Madhya Pradesh</p>
+<p>Bhopal, Madhya Pradesh</p>
 <a href="https://wa.me/919999999999">WhatsApp</a>
 <a href="tel:9999999999" style="background:#0b2a5a">Call Now</a>
 </div>
