@@ -10,7 +10,6 @@
 body{background:#f8fafc;color:#1e293b}
 .header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
-.logo span{background:#7c1d2a;color:#fff;padding:6px 10px;border-radius:6px}
 .nav{display:flex;gap:18px;align-items:center;font-weight:600;font-size:14px}
 .nav a{text-decoration:none;color:#334155}
 .btn{padding:10px 18px;border-radius:8px;border:none;font-weight:700;cursor:pointer}
@@ -37,7 +36,7 @@ body{background:#f8fafc;color:#1e293b}
 .partner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
 .p-box{border:1px solid #e2e8f0;border-radius:12px;padding:10px;text-align:center;background:#f8fafc;transition:.2s}
 .p-box:hover{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.08)}
-.p-logo{width:44px;height:44px;border-radius:50%;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:14px}
+.p-logo{width:44px;height:44px;border-radius:50%;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:12px}
 .p-name{font-size:12px;font-weight:700}
 .p-type{font-size:10px;color:#64748b}
 .footer{background:#0f172a;color:#94a3b8;text-align:center;padding:16px;font-size:12px;margin-top:20px}
@@ -46,7 +45,7 @@ body{background:#f8fafc;color:#1e293b}
 </head>
 <body>
 <div class="header">
-<<div class="logo"><img src="logo.png" alt="Masani Finsure" style="height:52px; width:auto; object-fit:contain; background:white; border-radius:8px; padding:2px;"></div>
+<div class="logo"><img src="logo.png" alt="Masani Finsure" style="height:52px; width:auto; object-fit:contain; background:white; border-radius:8px; padding:2px;"> Masani Finsure</div>
 <div class="nav"><a href="#">Home</a><a href="#">Insurance</a><a href="#">Calculator</a><a href="#">Claims</a><a href="#">📞 8770202265</a><button class="btn btn-orange">Get Quote</button><button class="btn btn-green">WhatsApp</button></div>
 </div>
 
@@ -55,52 +54,47 @@ body{background:#f8fafc;color:#1e293b}
 <div class="card"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400"><div class="card-body"><h3>Motor Insurance</h3><p>Car & Bike insurance, zero dep, 5 min me policy, roadside help.</p><div class="tag">Save 70% • Instant</div></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400"><div class="card-body"><h3>Term Insurance</h3><p>1 Cr cover sirf ₹500/mo, family secure after you.</p><div class="tag">1Cr @ ₹500/mo</div></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400"><div class="card-body"><h3>Business Insurance</h3><p>Shop, office, liability - small business special plans.</p><div class="tag">SME Special</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"><div class="card-body"><h3>LIC Jeevan Bima - LAST</h3><p>Endowment, pension, child education, retirement - long term saving.</p><div class="tag">Guaranteed Returns</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"><div class="card-body"><h3>LIC Jeevan Bima</h3><p>Endowment, pension, child education, retirement - long term saving.</p><div class="tag">Guaranteed Returns</div></div></div>
 </div>
 
 <div class="main-grid">
 <div class="calc">
-<h2>🧮 Premium Calculator - With City Images</h2><small>City select karo - Bhopal Indore Ujjain me alag premium</small>
-<label>Insurance Type (Image wala)</label><select><option>Health Insurance - ❤️ Image</option><option>Motor Insurance</option><option>Term Insurance</option></select>
+<h2>🧮 Premium Calculator</h2><small>City select karo - Bhopal Indore Ujjain me alag premium</small>
+<label>Insurance Type</label><select><option>Health Insurance</option><option>Motor Insurance</option><option>Term Insurance</option></select>
 <label>City</label><select><option>Bhopal</option><option>Indore</option><option>Ujjain</option></select>
 <label>Age</label><input value="32">
 <label>Cover</label><select><option>₹10 Lakhs</option><option>₹20 Lakhs</option></select>
 <button class="calc-btn">Calculate Now →</button>
-<div style="text-align:center;margin-top:12px;font-weight:800">Estimated: ₹8,245 / year<br><small>Images ke saath premium dekho - WhatsApp pe bhejo</small></div>
+<div style="text-align:center;margin-top:12px;font-weight:800">Estimated: ₹8,245 / year<br><small>WhatsApp pe bhejo</small></div>
 </div>
 
 <div class="partners">
-<h2>🤝 Our 28+ Insurance Partners - Logo + Naam</h2>
+<h2>🤝 Our 28+ Insurance Partners</h2>
 <div class="partner-grid">
-<div class="p-box"><div class="p-logo" style="background:#0b3d91">LIC</div><div class="p-name">LIC India</div><div class="p-type">Life Insurance</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/licindia.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">LIC India</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/hdfclife.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">HDFC Life</div><div class="p-type">Life + Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/iciciprulife.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">ICICI Prudential</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/sbilife.co.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">SBI Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/bajajallianz.co.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Bajaj Allianz</div><div class="p-type">Life + General</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/tataaia.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">TATA AIA Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/maxlifeinsurance.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Max Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/kotaklife.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Kotak Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/pnbmetlife.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">PNB MetLife</div><div class="p-type">Life</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/starhealth.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Star Health</div><div class="p-type">Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/nivabupa.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Niva Bupa</div><div class="p-type">Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/careinsurance.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Care Health</div><div class="p-type">Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/hdfcergo.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">HDFC Ergo</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/icicilombard.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">ICICI Lombard</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/tataaig.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">TATA AIG General</div><div class="p-type">General</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/sbigeneral.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">SBI General</div><div class="p-type">General</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/godigit.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Go Digit</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/acko.com" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Acko General</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/uiic.co.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">United India</div><div class="p-type">Govt. General</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/nationalinsurance.nic.co.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">National Insurance</div><div class="p-type">Govt. General</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/orientalinsurance.org.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">Oriental Insurance</div><div class="p-type">Govt. General</div></div>
-<div class="p-box"><img src="https://logo.clearbit.com/newindia.co.in" style="width:44px;height:44px;border-radius:50%;object-fit:contain;background:#fff;padding:4px;margin:0 auto 6px;display:block"><div class="p-name">The New India Assurance</div><div class="p-type">Govt. General</div></div>
+<div class="p-box"><div class="p-logo" style="background:#0b3d91">LIC</div><div class="p-name">LIC India</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#e11d48">HDFC</div><div class="p-name">HDFC Life</div><div class="p-type">Life + Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#c2410c">ICICI</div><div class="p-name">ICICI Prudential</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#1e40af">SBI</div><div class="p-name">SBI Life</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#0f766e">BAJAJ</div><div class="p-name">Bajaj Allianz</div><div class="p-type">Life + General</div></div>
+<div class="p-box"><div class="p-logo" style="background:#7c3aed">TATA</div><div class="p-name">TATA AIA Life</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#be123c">MAX</div><div class="p-name">Max Life</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#a16207">KOTAK</div><div class="p-name">Kotak Life</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#0e7490">PNB</div><div class="p-name">PNB MetLife</div><div class="p-type">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#15803d">STAR</div><div class="p-name">Star Health</div><div class="p-type">Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#0369a1">NIVA</div><div class="p-name">Niva Bupa</div><div class="p-type">Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#b45309">CARE</div><div class="p-name">Care Health</div><div class="p-type">Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#4d7c0f">ERGO</div><div class="p-name">HDFC Ergo</div><div class="p-type">Motor + Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#9d174d">LOMB</div><div class="p-name">ICICI Lombard</div><div class="p-type">Motor + Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#1d4ed8">TATA</div><div class="p-name">TATA AIG General</div><div class="p-type">General</div></div>
+<div class="p-box"><div class="p-logo" style="background:#6d28d9">SBI G</div><div class="p-name">SBI General</div><div class="p-type">General</div></div>
+<div class="p-box"><div class="p-logo" style="background:#047857">DIGIT</div><div class="p-name">Go Digit</div><div class="p-type">Motor + Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#000">ACKO</div><div class="p-name">Acko General</div><div class="p-type">Motor + Health</div></div>
+</div>
 <p style="margin-top:14px;font-size:11px;color:#64748b;text-align:center">Bhopal | Indore | Ujjain - Sabhi companies ke plans ek jagah compare karo</p>
 </div>
 </div>
-
 </div>
-<div class="footer">© 2024 Masani Finsure | Bhopal | Indore | Ujjain | Health ❤️ Motor 🚗 Term 👨‍👩‍👧‍👦 Business 🏢 LIC 📘 LAST | 28+ Partners | 8770202265</div>
+<div class="footer">© 2024 Masani Finsure | Bhopal | Indore | Ujjain | Health ❤️ Motor 🚗 Term 👨‍👩‍👧‍👦 Business 🏢 LIC 📘 | 28+ Partners | 8770202265</div>
 <div class="w-float">W</div>
 </body>
 </html>
