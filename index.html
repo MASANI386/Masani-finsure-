@@ -4,23 +4,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Masani Finsure - Insurance, RTO services, solar solutions and used cars.">
-  <title>Masani Finsure | Insurance • RTO • Solar • Used Cars</title>
+  <title>Masani Finsure | Best searching for you</title>
   <style>
-    :root{--navy:#1a2f5a;--blue:#1769aa;--gold:#f0b84b;--red:#e5392d;--orange:#f57c00;--ink:#1c2736;--muted:#657286;--bg:#f5f8fc;--white:#fff}
+    :root{--navy:#1a2f5a;--brown:#c35d1a;--orange:#e86f1a;--gold:#f0b84b;--blue:#1769aa;--ink:#1c2736;--muted:#657286;--bg:#f5f8fc;--white:#fff;--red:#e5392d}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 4px 18px #06132630}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:1.15rem;letter-spacing:.3px}
-    .brand img{height:42px;width:auto;background:#fff;border-radius:8px;padding:3px 8px;box-shadow:0 2px 8px #00000025}
-    .brand span{color:var(--gold)}
-    nav{display:flex;flex-wrap:wrap;gap:16px;font-size:.93rem}nav a:hover{color:var(--gold)}
-    .hero{background:linear-gradient(120deg,#10233f 0%,#1a3a6b 50%,#1769aa 100%);color:white;padding:74px 0 68px;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:1.4px;text-transform:uppercase;font-size:.82rem}
-    h1{font-size:clamp(2.1rem,5vw,3.65rem);line-height:1.12;margin:12px 0 18px}h1 span{color:var(--gold)}.hero p{color:#e2ebf5;font-size:1.08rem;max-width:650px}
-    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-1px)}
-    .btn-gold{background:linear-gradient(135deg,#f0b84b,#f57c00);color:#19243a}.btn-outline{border-color:#ffffff80;color:white}.btn-blue{background:var(--blue);color:#fff}
-    .hero-panel{background:#ffffff14;border:1px solid #ffffff2b;border-radius:20px;padding:24px;backdrop-filter:blur(6px)}.hero-panel h3{margin:0 0 10px}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick div{padding:13px;background:#ffffff15;border-radius:12px;font-size:.93rem;border:1px solid #ffffff15}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+    /* TOP HEADER - LIKE YOUR PHOTO */
+    header{background:#fff;color:#222;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #00000010;border-bottom:1px solid #eee}
+    .nav{ display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:.2px;color:var(--navy)}
+    .brand img{height:48px;width:auto}
+    .brand small{display:block;font-size:.75rem;color:#666;font-weight:500;margin-top:-4px;letter-spacing:.3px}
+    .nav-links{display:flex;align-items:center;gap:22px;font-size:.92rem;font-weight:600}
+    .nav-links a:hover{color:var(--brown)}.nav-links a.active{color:var(--brown);border-bottom:2px solid var(--brown);padding-bottom:2px}
+    .dropdown{position:relative}.dropdown:hover .drop{display:block}
+    .drop{position:absolute;top:24px;left:0;background:#fff;border:1px solid #e8e8e8;border-radius:10px;padding:8px 0;min-width:180px;box-shadow:0 12px 24px #00000012;display:none;z-index:10}
+    .drop a{display:block;padding:9px 16px;font-size:.9rem}.drop a:hover{background:#fff5ed}
+    .nav-right{display:flex;align-items:center;gap:12px}
+    .phone{font-weight:800;display:flex;align-items:center;gap:6px;font-size:.95rem}
+    .btn-login{background:var(--brown);color:#fff;padding:8px 14px;border-radius:8px;font-weight:700;font-size:.9rem;border:0;cursor:pointer}
+    .btn-login:hover{background:#a84f16}
+    /* HERO - LIKE PHOTO */
+    .hero-pro{background:linear-gradient(90deg,#fdf6f0 0%,#ffffff 60%);padding:38px 0 30px;border-bottom:1px solid #f0e6d8}
+    .hero-pro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+    .hero-pro h1{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:0 0 10px;color:#121212;font-weight:900}
+    .hero-pro p{color:#4b5563;font-size:1.02rem;margin:0 0 18px;max-width:560px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+    .btn-quote{background:var(--brown);color:#fff;padding:11px 18px;border-radius:10px;font-weight:800;border:0}
+    .btn-premium{background:#fff;border:1px solid var(--brown);color:var(--brown);padding:11px 18px;border-radius:10px;font-weight:700}
+    .trust{display:flex;flex-wrap:wrap;gap:14px;font-size:.82rem;color:#333;font-weight:600;margin-top:6px}
+    .trust span{display:flex;align-items:center;gap:5px}
+    .hero-img-wrap{position:relative;text-align:center}
+    .hero-img-wrap img{width:100%;max-width:520px;border-radius:18px}
+    .float-icon{position:absolute;background:#fff;border:1px solid #f0d5b8;border-radius:50%;width:48px;height:48px;display:grid;place-items:center;box-shadow:0 6px 16px #00000012;color:var(--brown);font-size:1.2rem}
+    .f1{top:10%;right:5%}.f2{top:40%;left:-10px}.f3{bottom:20%;left:0}.f4{bottom:15%;right:10%}
+    /* COMPANIES */
+    .companies{background:#fff;padding:28px 0;border-bottom:1px solid #eee}
+    .companies h3{text-align:center;color:var(--navy);margin:0 0 16px;font-size:1.15rem}
+    .logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    .logo-pill{border:1px solid #e8e8e8;background:#fff;border-radius:10px;padding:10px 16px;font-weight:800;font-size:.88rem;color:#333;box-shadow:0 2px 8px #00000005}
+    .logo-pill span{color:var(--brown)}
+    /* OLD SECTIONS */
     section{padding:62px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 30px}.section-head h2{font-size:clamp(1.7rem,3vw,2.35rem);color:var(--navy);margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
     .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e4eaf2;border-radius:17px;padding:23px;box-shadow:0 8px 24px #10233f08;transition:.2s;border-top:3px solid transparent}.card:hover{transform:translateY(-3px);border-top-color:var(--red);box-shadow:0 12px 32px #10233f14}
     .ico{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#e9f3fc,#d6e9ff);display:grid;place-items:center;font-size:1.55rem;margin-bottom:15px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{color:var(--muted);font-size:.94rem;margin:0 0 14px}.card ul{padding-left:19px;margin:8px 0 0;color:#445268;font-size:.9rem}
@@ -34,44 +58,92 @@
     .enquiry-box h3{margin:0 0 6px;color:var(--navy);display:flex;align-items:center;gap:8px}.enquiry-box p.small{margin:0 0 12px}
     label{display:block;font-weight:700;font-size:.88rem;margin:10px 0 4px}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd6e2;border-radius:8px;font:inherit;background:#fff;transition:.2s}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1769aa18;outline:none}textarea{min-height:80px;resize:vertical}form .btn{margin-top:14px;width:100%;border:0}
     .small{font-size:.82rem;color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;border:1px solid transparent;cursor:pointer}
+    .btn-blue{background:var(--blue);color:#fff}
     footer{background:#0b192d;color:#d8e2ee;padding:28px 0;font-size:.9rem}footer .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.disclaimer{font-size:.8rem;color:#b8c6d7;margin-top:14px}
-    @media(max-width:900px){.contact-info{grid-template-columns:1fr}.enquiry-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:11px}}
-    @media(max-width:480px){.hero{padding:48px 0}.cards{grid-template-columns:1fr}.quick{grid-template-columns:1fr 1fr}section{padding:46px 0}.btn{width:100%}.brand img{height:36px}}
+    @media(max-width:1000px){.nav-links{display:none}.hero-pro-grid{grid-template-columns:1fr}.contact-info{grid-template-columns:1fr}.enquiry-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}}
+    @media(max-width:480px){.cards{grid-template-columns:1fr}.hero-pro{padding:24px 0}.brand img{height:40px}}
   </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
     <a class="brand" href="#home">
-      <img src="logo.png" alt="Masani Finsure Logo" onerror="this.style.display='none'">
-      MASANI <span>FINSURE</span>
+      <img src="logo.png" alt="Masani Finsure" onerror="this.style.display='none'">
+      <div>Masani Finsure <small>Best searching for you</small></div>
     </a>
-    <nav aria-label="मुख्य नेविगेशन">
-      <a href="#services">Services</a><a href="#about">हमारे बारे में</a><a href="#contact">Enquiry</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="hero" id="home">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">आपकी ज़रूरत, हमारी सहायता</div>
-        <h1>Insurance से लेकर <span>RTO, Solar और Cars</span> तक</h1>
-        <p>Masani Finsure पर आपका स्वागत है। बीमा सेवाओं, वाहन दस्तावेज़ सहायता, सोलर समाधान और पुरानी कारों के बारे में जानकारी के लिए हमसे संपर्क करें।</p>
-        <div class="actions">
-          <a class="btn btn-gold" href="#services">हमारी सेवाएँ देखें</a>
-          <a class="btn btn-outline" href="#contact">Enquiry करें</a>
+    <div class="nav-links">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <div class="dropdown">
+        <a href="#services">Insurance ▾</a>
+        <div class="drop">
+          <a href="#contact">Motor Insurance</a>
+          <a href="#contact">Health Insurance</a>
+          <a href="#contact">Life / Term Insurance</a>
+          <a href="#contact">Business Insurance</a>
         </div>
       </div>
-      <aside class="hero-panel">
-        <h3>हमारी प्रमुख सेवाएँ</h3>
-        <div class="quick">
-          <div>🛡️<br><b>Insurance</b></div><div>🚘<br><b>RTO Services</b></div>
-          <div>☀️<br><b>Solar Solutions</b></div><div>🔑<br><b>Used Cars</b></div>
-        </div>
-      </aside>
+      <a href="#contact">Calculator</a>
+      <a href="#contact">Claims</a>
+      <a href="#contact">Support</a>
+      <a href="#about">Blog</a>
+      <a href="#contact">Contact</a>
     </div>
-  </section>
+    <div class="nav-right">
+      <a class="phone" href="tel:+918770202265">📞 +91 8770202265</a>
+      <a class="btn-login" href="#contact">👤 Login / Sign In</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero-pro" id="home">
+  <div class="wrap hero-pro-grid">
+    <div>
+      <h1>Professional Insurance Solutions</h1>
+      <p>Compare & buy insurance plans instantly. Trusted by 50,000+ customers for Life, Health, Motor, Term & Business insurance.</p>
+      <div class="hero-actions">
+        <a class="btn-quote" href="#contact">Get Free Quote →</a>
+        <a class="btn-premium" href="#contact">🧮 Calculate Premium</a>
+      </div>
+      <div class="trust">
+        <span>🛡️ IRDAI Registered • 100% Secure</span>
+        <span>⏱️ 95% Claim Settlement Ratio</span>
+        <span>⭐ 50K+ Happy Customers</span>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&q=80&auto=format&fit=crop" alt="Happy Family Insurance">
+      <div class="float-icon f1">➕</div>
+      <div class="float-icon f2">🧮</div>
+      <div class="float-icon f3">⚙️</div>
+      <div class="float-icon f4">💼</div>
+    </div>
+  </div>
+</section>
+
+<section class="companies">
+  <div class="wrap">
+    <h3>Our Insurance Partners — 25+ Companies से Best Policy</h3>
+    <div class="logos">
+      <div class="logo-pill">HDFC <span>ERGO</span></div>
+      <div class="logo-pill">ICICI <span>Lombard</span></div>
+      <div class="logo-pill">Bajaj <span>Allianz</span></div>
+      <div class="logo-pill">Star <span>Health</span></div>
+      <div class="logo-pill">LIC <span>India</span></div>
+      <div class="logo-pill">SBI <span>General</span></div>
+      <div class="logo-pill">TATA <span>AIG</span></div>
+      <div class="logo-pill">Reliance <span>General</span></div>
+      <div class="logo-pill">New India <span>Assurance</span></div>
+      <div class="logo-pill">Oriental <span>Insurance</span></div>
+      <div class="logo-pill">Max <span>Life</span></div>
+      <div class="logo-pill">Aditya Birla <span>Capital</span></div>
+    </div>
+    <p class="small" style="text-align:center;margin-top:12px">आपको इन सभी कंपनियों में से सबसे अच्छा प्रीमियम और क्लेम रेशियो के साथ पॉलिसी दिलाई जाएगी।</p>
+  </div>
+</section>
+
+<main>
   <section id="services">
     <div class="wrap">
       <div class="section-head"><h2>हमारी सेवाएँ</h2><p>अपनी ज़रूरत चुनें और नीचे दिए गए फॉर्म में जानकारी भरें।</p></div>
@@ -83,6 +155,7 @@
       </div>
     </div>
   </section>
+
   <section class="why" id="about">
     <div class="wrap">
       <div class="section-head"><h2>Masani Finsure के बारे में</h2><p>हमारा उद्देश्य है कि ग्राहक को उसकी ज़रूरत के अनुसार जानकारी और अगला कदम समझने में आसानी हो।</p></div>
@@ -97,17 +170,14 @@
   <section id="contact">
     <div class="wrap">
       <div class="section-head"><h2>हमसे संपर्क करें</h2><p>जिस सेवा के लिए पूछताछ करनी है, उसका फॉर्म भरें। सीधे WhatsApp पर संदेश जाएगा।</p></div>
-      
       <div class="contact-info">
         <div class="info-box"><b>📞 Mobile / WhatsApp</b> <a href="tel:8770202265">8770202265</a><br><a href="https://wa.me/918770202265" target="_blank">WhatsApp पर चैट करें</a></div>
         <div class="info-box"><b>📧 Email</b> <a href="mailto:bestpolicy365@gmail.com">bestpolicy365@gmail.com</a></div>
         <div class="info-box"><b>📍 Office Locations</b> Bhopal • Indore • Ujjain</div>
       </div>
-
       <div class="enquiry-grid">
         <div class="enquiry-box ins">
-          <h3>🛡️ Insurance Enquiry</h3>
-          <p class="small">बीमा के लिए जानकारी भरें</p>
+          <h3>🛡️ Insurance Enquiry</h3><p class="small">बीमा के लिए जानकारी भरें</p>
           <form onsubmit="return sendEnquiry(event,'Insurance')">
             <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
             <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
@@ -118,8 +188,7 @@
           </form>
         </div>
         <div class="enquiry-box rto">
-          <h3>🚘 RTO Enquiry</h3>
-          <p class="small">RTO कार्य के लिए जानकारी भरें</p>
+          <h3>🚘 RTO Enquiry</h3><p class="small">RTO कार्य के लिए जानकारी भरें</p>
           <form onsubmit="return sendEnquiry(event,'RTO Services')">
             <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
             <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
@@ -130,8 +199,7 @@
           </form>
         </div>
         <div class="enquiry-box solar">
-          <h3>☀️ Solar Enquiry</h3>
-          <p class="small">सोलर के लिए जानकारी भरें</p>
+          <h3>☀️ Solar Enquiry</h3><p class="small">सोलर के लिए जानकारी भरें</p>
           <form onsubmit="return sendEnquiry(event,'Solar Solutions')">
             <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
             <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
@@ -142,8 +210,7 @@
           </form>
         </div>
         <div class="enquiry-box cars">
-          <h3>🔑 Used Cars Enquiry</h3>
-          <p class="small">पुरानी कार के लिए जानकारी भरें</p>
+          <h3>🔑 Used Cars Enquiry</h3><p class="small">पुरानी कार के लिए जानकारी भरें</p>
           <form onsubmit="return sendEnquiry(event,'Used Cars')">
             <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
             <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
