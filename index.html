@@ -1,96 +1,38 @@
 <!doctype html>
 <html lang="hi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Masani Finsure - Insurance, RTO services, solar solutions and used cars.">
-  <title>Masani Finsure | Best searching for you</title>
-  <style>
-    :root{--navy:#1a2f5a;--brown:#c35d1a;--orange:#e86f1a;--gold:#f0b84b;--blue:#1769aa;--ink:#1c2736;--muted:#657286;--bg:#f5f8fc;--white:#fff;--red:#e5392d}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
-    header{background:#fff;color:#222;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #00000010;border-bottom:1px solid #eee}
-   .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
-   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:.2px;color:var(--navy)}
-   .brand img{height:48px;width:auto}.brand small{display:block;font-size:.75rem;color:#666;font-weight:500;margin-top:-4px}
-   .nav-links{display:flex;align-items:center;gap:22px;font-size:.92rem;font-weight:600}.nav-links a:hover{color:var(--brown)}.nav-links a.active{color:var(--brown);border-bottom:2px solid var(--brown);padding-bottom:2px}
-   .dropdown{position:relative}.dropdown:hover.drop{display:block}.drop{position:absolute;top:24px;left:0;background:#fff;border:1px solid #e8e8e8;border-radius:10px;padding:8px 0;min-width:180px;box-shadow:0 12px 24px #00000012;display:none;z-index:10}.drop a{display:block;padding:9px 16px;font-size:.9rem}.drop a:hover{background:#fff5ed}
-   .nav-right{display:flex;align-items:center;gap:12px}.phone{font-weight:800;display:flex;align-items:center;gap:6px;font-size:.95rem}.btn-login{background:var(--brown);color:#fff;padding:8px 14px;border-radius:8px;font-weight:700;font-size:.9rem;border:0;cursor:pointer}
-   .hero-pro{background:linear-gradient(90deg,#fdf6f0 0%,#ffffff 60%);padding:38px 0 30px;border-bottom:1px solid #f0e6d8}.hero-pro-grid{display:grid;grid-template-columns:1.1fr.9fr;gap:30px;align-items:center}.hero-pro h1{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:0 0 10px;color:#121212;font-weight:900}.hero-pro p{color:#4b5563;font-size:1.02rem;margin:0 0 18px;max-width:560px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}.btn-quote{background:var(--brown);color:#fff;padding:11px 18px;border-radius:10px;font-weight:800;border:0}.btn-premium{background:#fff;border:1px solid var(--brown);color:var(--brown);padding:11px 18px;border-radius:10px;font-weight:700}.trust{display:flex;flex-wrap:wrap;gap:14px;font-size:.82rem;color:#333;font-weight:600;margin-top:6px}.hero-img-wrap{position:relative;text-align:center}.hero-img-wrap img{width:100%;max-width:520px;border-radius:18px}.float-icon{position:absolute;background:#fff;border:1px solid #f0d5b8;border-radius:50%;width:48px;height:48px;display:grid;place-items:center;box-shadow:0 6px 16px #00000012;color:var(--brown);font-size:1.2rem}.f1{top:10%;right:5%}.f2{top:40%;left:-10px}.f3{bottom:20%;left:0}.f4{bottom:15%;right:10%}
-   .companies{background:#fff;padding:28px 0;border-bottom:1px solid #eee}.companies h3{text-align:center;color:var(--navy);margin:0 0 16px;font-size:1.15rem}.logos{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.logo-pill{border:1px solid #e8e8e8;background:#fff;border-radius:10px;padding:10px 16px;font-weight:800;font-size:.88rem;color:#333;box-shadow:0 2px 8px #00000005}
-    section{padding:62px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 30px}.section-head h2{font-size:clamp(1.7rem,3vw,2.35rem);color:var(--navy);margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
-   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e4eaf2;border-radius:17px;padding:23px;box-shadow:0 8px 24px #10233f08;transition:.2s;border-top:3px solid transparent}.card:hover{transform:translateY(-3px);border-top-color:var(--red)}
-   .ico{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#e9f3fc,#d6e9ff);display:grid;place-items:center;font-size:1.55rem;margin-bottom:15px}.why{background:linear-gradient(180deg,#eaf1f8 0%,#f0f5fb 100%)}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.why-item{padding:22px;background:#fff;border-radius:14px;border-left:4px solid var(--gold)}
-   .contact-info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px}.info-box{background:#fff;border:1px solid #e3eaf2;border-radius:14px;padding:18px;text-align:center}.info-box b{display:block;color:var(--navy);margin-bottom:4px}
-   .enquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.enquiry-box{background:#fff;border:1px solid #e3eaf2;border-radius:18px;padding:22px;box-shadow:0 8px 24px #10233f06;border-top:4px solid var(--navy)}.enquiry-box.ins{border-top-color:#1a2f5a}.enquiry-box.rto{border-top-color:#1769aa}.enquiry-box.solar{border-top-color:#f57c00}.enquiry-box.cars{border-top-color:#e5392d}
-    label{display:block;font-weight:700;font-size:.88rem;margin:10px 0 4px}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd6e2;border-radius:8px;font:inherit;background:#fff}textarea{min-height:80px;resize:vertical}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;font-weight:700;border:0;cursor:pointer}.btn-blue{background:var(--blue);color:#fff}.small{font-size:.82rem;color:var(--muted)}
-    footer{background:#0b192d;color:#d8e2ee;padding:28px 0;font-size:.9rem}footer.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:1000px){.nav-links{display:none}.hero-pro-grid{grid-template-columns:1fr}.contact-info{grid-template-columns:1fr}.enquiry-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}}
-  </style>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Masani Finsure | 26 Original Partners</title>
+<style>
+:root{--navy:#1a2f5a;--brown:#c35d1a;--blue:#1769aa;--bg:#f5f8fc;--ink:#1c2736}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--ink)}a{text-decoration:none;color:inherit}.wrap{width:min(1220px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #00000010;border-bottom:1px solid #eee}.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy);font-size:1.25rem}.brand img{height:48px}.phone{font-weight:800}.btn-login{background:var(--brown);color:#fff;padding:8px 14px;border-radius:8px;font-weight:700;border:0}
+.hero-pro{background:linear-gradient(90deg,#fdf6f0 0%,#fff 60%);padding:32px 0}.hero-pro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}.hero-pro h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 10px}.btn-quote{background:var(--brown);color:#fff;padding:11px 18px;border-radius:10px;font-weight:800;border:0}.hero-img-wrap img{width:100%;max-width:520px;border-radius:18px}
+.partners-section{background:#fffaf3;padding:36px 0;border-bottom:1px solid #f0e6d8;border-top:1px solid #f0e6d8}.partners-section h3{text-align:center;color:#1a2f5a;font-size:1.4rem;margin:0 0 6px}.partners-section p.sub{text-align:center;color:#666;font-size:.9rem;margin:0 0 18px}
+.partners-grid-img{width:100%;max-width:1100px;margin:0 auto;display:block;border-radius:16px;box-shadow:0 8px 24px #00000008;border:1px solid #f0e6d8}
+.logos-original{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.logo-original-card{background:#fff;border:1px solid #e8e8e8;border-radius:12px;padding:12px;text-align:center;box-shadow:0 2px 8px #00000006}
+.logo-original-card img{width:100%;height:70px;object-fit:contain}
+section{padding:40px 0}.contact-info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px}.info-box{background:#fff;border:1px solid #e3eaf2;border-radius:14px;padding:16px;text-align:center}.enquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.enquiry-box{background:#fff;border:1px solid #e3eaf2;border-radius:16px;padding:18px;border-top:4px solid var(--navy)}.btn-blue{background:var(--blue);color:#fff;padding:11px;border-radius:8px;border:0;width:100%;margin-top:8px;font-weight:700}
+footer{background:#0b192d;color:#d8e2ee;padding:22px 0;text-align:center}
+@media(max-width:900px){.logos-original{grid-template-columns:repeat(2,1fr)}.enquiry-grid{grid-template-columns:1fr}.contact-info{grid-template-columns:1fr}}
+</style></head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#home"><img src="logo.png" alt="Masani Finsure"><div>Masani Finsure <small>Best searching for you</small></div></a>
-    <div class="nav-links"><a class="active" href="#home">Home</a><a href="#about">About</a><div class="dropdown"><a href="#services">Insurance ▾</a><div class="drop"><a href="#contact">Motor</a><a href="#contact">Health</a><a href="#contact">Life / Term</a><a href="#contact">Business</a></div></div><a href="#contact">Calculator</a><a href="#contact">Claims</a><a href="#contact">Support</a><a href="#about">Blog</a><a href="#contact">Contact</a></div>
-    <div class="nav-right"><a class="phone" href="tel:+918770202265">📞 +91 8770202265</a><a class="btn-login" href="#contact">👤 Login / Sign In</a></div>
-  </div>
-</header>
+<header><div class="wrap nav"><a class="brand" href="#home"><img src="logo.png" onerror="this.style.display='none'"> MASANI FINSURE</a><div><a class="phone" href="tel:+918770202265">📞 8770202265</a></div></div></header>
 
-<section class="hero-pro" id="home">
-  <div class="wrap hero-pro-grid">
-    <div><h1>Professional Insurance Solutions</h1><p>Compare & buy insurance plans instantly. Trusted by 50,000+ customers for Life, Health, Motor, Term & Business insurance.</p><div class="hero-actions"><a class="btn-quote" href="#contact">Get Free Quote →</a><a class="btn-premium" href="#contact">🧮 Calculate Premium</a></div><div class="trust"><span>🛡️ IRDAI Registered • 100% Secure</span><span>⏱️ 95% Claim Settlement Ratio</span><span>⭐ 50K+ Happy Customers</span></div></div>
-    <div class="hero-img-wrap"><img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&q=80&auto=format&fit=crop" alt="Family"><div class="float-icon f1">➕</div><div class="float-icon f2">🧮</div><div class="float-icon f3">⚙️</div><div class="float-icon f4">💼</div></div>
-  </div>
+<section class="hero-pro"><div class="wrap hero-pro-grid"><div><h1>26 Original Insurance Partners</h1><p>Aapke bheje hue original logos ke sath — Client ko dikhao aapke pass kitne options hai</p><a class="btn-quote" href="#contact">Get Free Quote →</a></div><div class="hero-img-wrap"><img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&q=80"></div></div></section>
+
+<!-- AAPKE 26 ORIGINAL LOGOS - EXACT IMAGE -->
+<section class="partners-section">
+<div class="wrap">
+<h3>Our Insurance Partners - 26 Companies With Original Logos</h3>
+<p class="sub">Ye wahi original logos hai jo aapne bheje the — 100% Original Quality</p>
+<img src="partners_original_26.png" alt="26 Original Insurance Partners" class="partners-grid-img">
+<p style="text-align:center;color:#888;font-size:.8rem;margin-top:12px;">HDFC ERGO • TATA AIG • Bajaj Allianz • IndusInd • Digit • Royal Sundaram • National Insurance • Care • Chola MS • ICICI Lombard • IFFCO-TOKIO • Kotak • Liberty • Manipal Cigna • Shriram • SBI General • Generali Central • New India • HDFC Life • Bajaj Life • ICICI Prudential • Max Life • TATA AIA • Zuno • Magma HDI • Universal Sompo</p>
+</div>
 </section>
 
-<section class="companies">
-  <div class="wrap">
-    <h3>Our Insurance Partners — 25+ Companies से Best Policy</h3>
-    <div class="logos"><div class="logo-pill">HDFC ERGO</div><div class="logo-pill">ICICI Lombard</div><div class="logo-pill">Bajaj Allianz</div><div class="logo-pill">Star Health</div><div class="logo-pill">LIC India</div><div class="logo-pill">SBI General</div><div class="logo-pill">TATA AIG</div><div class="logo-pill">Reliance General</div><div class="logo-pill">New India</div><div class="logo-pill">Oriental</div><div class="logo-pill">Max Life</div><div class="logo-pill">Aditya Birla</div></div>
-  </div>
-</section>
+<section id="contact"><div class="wrap"><h2 style="text-align:center;color:#1a2f5a;">Enquiry करें</h2><div class="contact-info"><div class="info-box"><b>📞 8770202265</b><br><a href="https://wa.me/918770202265">WhatsApp</a></div><div class="info-box"><b>📧 bestpolicy365@gmail.com</b></div><div class="info-box"><b>📍 Bhopal • Indore • Ujjain</b></div></div><div class="enquiry-grid"><div class="enquiry-box"><h3>🛡️ Insurance Enquiry</h3><form onsubmit="return sendEnquiry(event,'Insurance')"><input name="name" placeholder="Naam" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:6px 0;"><input name="phone" placeholder="Mobile" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:6px 0;"><button class="btn-blue" type="submit">WhatsApp भेजें</button></form></div><div class="enquiry-box"><h3>🚘 RTO • ☀️ Solar • 🔑 Cars</h3><form onsubmit="return sendEnquiry(event,'Other')"><input name="name" placeholder="Naam" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:6px 0;"><input name="phone" placeholder="Mobile" required style="width:100%;padding:10px;border:1px solid #ccc;border-radius:8px;margin:6px 0;"><button class="btn-blue" type="submit" style="background:#c35d1a;">WhatsApp भेजें</button></form></div></div></div></section>
 
-<!-- IRDA TABLE START -->
-<section style="background:#fff;padding:30px 0;border-top:1px solid #eee;">
-  <div class="wrap">
-    <div class="section-head"><h2>Latest IRDA Health Insurance Incurred Claim Settlement Ratio 2025</h2><p>आपके क्लाइंट देख सकें कि किस कंपनी का क्लेम रेशियो सबसे अच्छा है</p></div>
-    <div style="overflow:auto;border:1px solid #e3eaf2;border-radius:14px;">
-      <table style="width:100%;border-collapse:collapse;font-size:.88rem;background:#fff;min-width:700px;">
-        <thead><tr style="background:#0b2d5a;color:#fff;text-align:left;"><th style="padding:12px 14px;">Sl. No.</th><th style="padding:12px 14px;">Company Logo & Name</th><th style="padding:12px 14px;text-align:right;">Claim Incurred Ratio</th></tr></thead>
-        <tbody id="irdaTable"></tbody>
-      </table>
-    </div>
-    <p class="small" style="text-align:center;margin-top:10px">Source: IRDA Report 2025 | Data client trust ke liye</p>
-  </div>
-</section>
-
-<main>
-  <section id="services"><div class="wrap"><div class="section-head"><h2>हमारी सेवाएँ</h2><p>अपनी ज़रूरत चुनें और नीचे फॉर्म भरें।</p></div><div class="cards"><article class="card"><div class="ico">🛡️</div><h3>Insurance</h3><p>बीमा विकल्प समझने में सहायता।</p><ul><li>Motor / Vehicle</li><li>Health</li><li>Life</li><li>General & Transit</li></ul></article><article class="card"><div class="ico">🚘</div><h3>RTO Services</h3><p>वाहन और लाइसेंस कार्यों में सहायता।</p><ul><li>RC / Mobile update</li><li>Learning Licence & DL</li><li>Fitness, Permit, PUC</li><li>Tax, Name Transfer, HSRP</li></ul></article><article class="card"><div class="ico">☀️</div><h3>Solar Solutions</h3><p>सोलर सिस्टम की जानकारी।</p><ul><li>Rooftop Solar</li><li>विभिन्न kW विकल्प</li><li>ज़रूरत का आकलन</li><li>Quotation</li></ul></article><article class="card"><div class="ico">🔑</div><h3>Used Cars</h3><p>पुरानी कार पूछताछ।</p><ul><li>Car buying</li><li>Car selling</li><li>Vehicle details</li><li>उपलब्धता</li></ul></article></div></div></section>
-
-  <section class="why" id="about"><div class="wrap"><div class="section-head"><h2>Masani Finsure के बारे में</h2></div><div class="why-grid"><div class="why-item"><strong>एक जगह कई सेवाएँ</strong><span class="small">Insurance, RTO, Solar और Used Cars एक ही जगह।</span></div><div class="why-item"><strong>सीधा संपर्क</strong><span class="small">WhatsApp या फोन से सीधे बात।</span></div><div class="why-item"><strong>स्पष्ट जानकारी</strong><span class="small">कीमत, पात्रता संबंधित कंपनी/विभाग से।</span></div></div></div></section>
-
-  <section id="contact"><div class="wrap"><div class="section-head"><h2>हमसे संपर्क करें</h2></div>
-      <div class="contact-info"><div class="info-box"><b>📞 Mobile / WhatsApp</b> <a href="tel:8770202265">8770202265</a><br><a href="https://wa.me/918770202265" target="_blank">WhatsApp चैट</a></div><div class="info-box"><b>📧 Email</b> <a href="mailto:bestpolicy365@gmail.com">bestpolicy365@gmail.com</a></div><div class="info-box"><b>📍 Office</b> Bhopal • Indore • Ujjain</div></div>
-      <div class="enquiry-grid">
-        <div class="enquiry-box ins"><h3>🛡️ Insurance Enquiry</h3><form onsubmit="return sendEnquiry(event,'Insurance')"><label>नाम</label><input name="name" required><label>मोबाइल</label><input name="phone" required><label>वाहन / पॉलिसी</label><input name="vehicle"><label>Type</label><select name="type"><option>Motor</option><option>Health</option><option>Life</option><option>Other</option></select><label>संदेश</label><textarea name="message"></textarea><button class="btn btn-blue" type="submit">WhatsApp पर भेजें</button></form></div>
-        <div class="enquiry-box rto"><h3>🚘 RTO Enquiry</h3><form onsubmit="return sendEnquiry(event,'RTO')"><label>नाम</label><input name="name" required><label>मोबाइल</label><input name="phone" required><label>RC नंबर</label><input name="vehicle"><label>काम</label><select name="type"><option>RC Transfer</option><option>DL / LL</option><option>Fitness / PUC</option><option>Other</option></select><label>संदेश</label><textarea name="message"></textarea><button class="btn btn-blue" type="submit">WhatsApp पर भेजें</button></form></div>
-        <div class="enquiry-box solar"><h3>☀️ Solar Enquiry</h3><form onsubmit="return sendEnquiry(event,'Solar')"><label>नाम</label><input name="name" required><label>मोबाइल</label><input name="phone" required><label>जगह</label><input name="vehicle" placeholder="Bhopal / Indore / Ujjain"><label>kW</label><select name="type"><option>1-3kW</option><option>3-5kW</option><option>5-10kW</option><option>10kW+</option></select><label>बिल</label><input name="bill"><button class="btn btn-blue" style="background:#f57c00" type="submit">WhatsApp पर भेजें</button></form></div>
-        <div class="enquiry-box cars"><h3>🔑 Used Cars Enquiry</h3><form onsubmit="return sendEnquiry(event,'Used Cars')"><label>नाम</label><input name="name" required><label>मोबाइल</label><input name="phone" required><label>खरीदना / बेचना</label><select name="vehicle"><option>खरीदना है</option><option>बेचना है</option></select><label>Model / Budget</label><input name="type"><label>संदेश</label><textarea name="message"></textarea><button class="btn btn-blue" style="background:#e5392d" type="submit">WhatsApp पर भेजें</button></form></div>
-      </div>
-  </div></section>
-</main>
-<footer><div class="wrap"><div class="foot"><b>MASANI FINSURE</b><span>Bhopal | Indore | Ujjain | 8770202265 | bestpolicy365@gmail.com</span><span>© <span id="year"></span> Masani Finsure</span></div></div></footer>
-
-<script>
-const WHATSAPP_NUMBER = "918770202265";
-document.getElementById("year").textContent = new Date().getFullYear();
-const companies=[
-["Acko General Insurance Limited",56.91,"acko.com"],["Bajaj Allianz General Insurance Co. Ltd.",84.96,"bajajallianz.co.in"],["Cholamandalam MS General Insurance Co. Ltd.",66.67,"cholainsurance.com"],["Future Generali India Insurance Company Limited",84.62,"futuregenerali.in"],["Go Digit General Insurance Ltd.",93.87,"godigit.com"],["HDFC ERGO General Insurance Co. Ltd.",80.98,"hdfcergo.com"],["ICICI Lombard General Insurance Co. Ltd.",78.85,"icicilombard.com"],["IFFCO Tokio General Insurance Co. Ltd.",107.46,"iffcotokio.co.in"],["Kotak Mahindra General Insurance Co. Ltd.",59.06,"kotak.com"],["Kshema General Insurance Limited",null,"kshema.co.in"],["Liberty General Insurance Limited",79.92,"libertyinsurance.in"],["Magma HDI General Insurance Company Limited",87.46,"magmahdi.co.in"],["Navi General Insurance Limited",59.40,"navi.com"],["Raheja QBE General Insurance Company limited",106.27,"rahejaqbe.com"],["Reliance General Insurance Co. Ltd.",89.42,"reliancegeneral.co.in"],["Royal Sundaram General Insurance Co. Limited",92.06,"royalsundaram.in"],["SBI General Insurance Company Limited",87.86,"sbigeneral.in"],["Shriram General Insurance Company Limited",47.47,"shriramgi.com"],["Tata AIG General Insurance Co. Ltd.",77.94,"tataaig.com"],["Universal Sompo General Insurance Co. Ltd.",105.78,"universalsompo.com"],["Zuno General Insurance Company Limited",88.45,"zuno.com"],["National Insurance Co. Ltd.",90.83,"nationalinsurance.nic.co.in"],["The New India Assurance Co. Ltd.",105.87,"newindia.co.in"],["The Oriental Insurance Co. Ltd",101.96,"orientalinsurance.org.in"],["United India Insurance Co. Ltd",109.23,"uiic.co.in"],["Aditya Birla Health insurance Co. Limited",68.31,"adityabirlacapital.com"],["Care Health Insurance Ltd.",53.82,"careinsurance.com"],["Galaxy Health and Allied Insurance Company Limited",null,"galaxyhealth.com"],["ManipalCigna Health Insurance Company Limited",64.66,"manipalcigna.com"],["Narayana Health Insurance Limited",null,"narayanahealth.org"],["Niva Bupa Health Insurance Company Ltd",59.02,"nivabupa.com"],["Reliance Health Insurance Ltd.",null,"reliancegeneral.co.in"],["Star Health and Allied Insurance Company Limited",65,"starhealth.in"]
-];
-const tbody=document.getElementById('irdaTable');
-companies.forEach((c,i)=>{const ratio=c[1]?c[1]+'%':'NA';const col=c[1]&&c[1]>85?'#0a7a2e':c[1]&&c[1]>70?'#b77900':'#666';tbody.innerHTML+=`<tr style="border-bottom:1px solid #edf1f5;"><td style="padding:10px 14px;">${i+1}</td><td style="padding:10px 14px;display:flex;align-items:center;gap:10px;font-weight:600;"><img src="https://logo.clearbit.com/${c[2]}" onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(c[0].charAt(0))}&background=0D8ABC&color=fff&size=32'" style="width:32px;height:32px;border-radius:6px;background:#fff;border:1px solid #eee;object-fit:contain;"> ${c[0]}</td><td style="padding:10px 14px;text-align:right;font-weight:800;color:${col}">${ratio}</td></tr>`;});
-function sendEnquiry(e,service){e.preventDefault();const f=e.target;const name=f.querySelector('[name=name]').value.trim();const phone=f.querySelector('[name=phone]').value.trim();const vehicle=f.querySelector('[name=vehicle]')?f.querySelector('[name=vehicle]').value.trim():'';const type=f.querySelector('[name=type]')?f.querySelector('[name=type]').value.trim():'';const bill=f.querySelector('[name=bill]')?f.querySelector('[name=bill]').value.trim():'';const message=f.querySelector('[name=message]')?f.querySelector('[name=message]').value.trim():'';let text=`Namaste Masani Finsure,%0A*Service:* ${encodeURIComponent(service)}%0A*Name:* ${encodeURIComponent(name)}%0A*Mobile:* ${encodeURIComponent(phone)}`;if(vehicle)text+=`%0A*Details:* ${encodeURIComponent(vehicle)}`;if(type)text+=`%0A*Type:* ${encodeURIComponent(type)}`;if(bill)text+=`%0A*Bill:* ${encodeURIComponent(bill)}`;if(message)text+=`%0A*Message:* ${encodeURIComponent(message)}`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`,"_blank","noopener");return false;}
-</script>
+<footer>© <span id="year"></span> MASANI FINSURE | 8770202265 | bestpolicy365@gmail.com</footer>
+<script>const WHATSAPP_NUMBER="918770202265";document.getElementById("year").textContent=new Date().getFullYear();function sendEnquiry(e,s){e.preventDefault();const f=e.target;const n=f.querySelector('[name=name]').value;const p=f.querySelector('[name=phone]').value;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=*Service:*%20${s}%0A*Name:*%20${n}%0A*Mobile:*%20${p}`,"_blank");return false;}</script>
 </body>
 </html>
