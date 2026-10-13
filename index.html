@@ -10,9 +10,10 @@
 body{background:#f8fafc;color:#1e293b}
 .header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.05);padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}
+.logo-img{height:42px;width:42px;border-radius:8px;background:#7c1d2a;color:#fff;display:flex;align-items:center;justify-content:center}
 .nav{display:flex;gap:18px;align-items:center;font-weight:600;font-size:14px}
-.nav a{text-decoration:none;color:#334155}
-.btn{padding:10px 18px;border-radius:8px;border:none;font-weight:700;cursor:pointer}
+.nav a{text-decoration:none;color:#334155;cursor:pointer}
+.btn{padding:10px 18px;border-radius:8px;border:none;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
 .btn-orange{background:#ea580c;color:#fff}
 .btn-green{background:#16a34a;color:#fff}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;padding:20px 5%}
@@ -20,81 +21,97 @@ body{background:#f8fafc;color:#1e293b}
 .card:hover{transform:translateY(-4px)}
 .card img{width:100%;height:150px;object-fit:cover}
 .card-body{padding:14px}
-.card-body h3{font-size:15px;margin-bottom:4px}
-.card-body p{font-size:12px;color:#64748b;line-height:1.4}
-.tag{font-size:11px;font-weight:700;margin-top:8px;color:#0f172a}
 .main-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:18px;padding:10px 5% 30px}
-@media(max-width:900px){.main-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.main-grid{grid-template-columns:1fr}.nav{display:none}}
 .calc{background:#fff;border-radius:16px;padding:18px;border:1px solid #e2e8f0}
-.calc h2{font-size:18px;margin-bottom:6px}
-.calc small{color:#64748b}
-.calc label{font-size:12px;font-weight:600;margin-top:12px;display:block}
 .calc select,.calc input{width:100%;padding:10px;border-radius:8px;border:1px solid #cbd5e1;margin-top:4px}
+.calc label{font-size:12px;font-weight:600;margin-top:12px;display:block}
 .calc-btn{width:100%;background:#ea580c;color:#fff;padding:12px;border:none;border-radius:10px;margin-top:16px;font-weight:800;cursor:pointer}
-.partners{background:#fff;border-radius:16px;padding:18px;border:1px solid #e2e8f0}
-.partners h2{font-size:18px;margin-bottom:14px}
 .partner-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}
-.p-box{border:1px solid #e2e8f0;border-radius:12px;padding:10px;text-align:center;background:#f8fafc;transition:.2s}
-.p-box:hover{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.p-box{border:1px solid #e2e8f0;border-radius:12px;padding:10px;text-align:center;background:#f8fafc}
 .p-logo{width:44px;height:44px;border-radius:50%;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:12px}
-.p-name{font-size:12px;font-weight:700}
-.p-type{font-size:10px;color:#64748b}
 .footer{background:#0f172a;color:#94a3b8;text-align:center;padding:16px;font-size:12px;margin-top:20px}
-.w-float{position:fixed;right:18px;bottom:18px;background:#25D366;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.w-float{position:fixed;right:18px;bottom:18px;background:#25D366;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px;box-shadow:0 6px 18px rgba(0,0,0,.2);cursor:pointer;text-decoration:none}
 </style>
 </head>
 <body>
 <div class="header">
-<div class="logo"><img src="logo.png" alt="Masani Finsure" style="height:52px; width:auto; object-fit:contain; background:white; border-radius:8px; padding:2px;"> Masani Finsure</div>
-<div class="nav"><a href="#">Home</a><a href="#">Insurance</a><a href="#">Calculator</a><a href="#">Claims</a><a href="#">📞 8770202265</a><button class="btn btn-orange">Get Quote</button><button class="btn btn-green">WhatsApp</button></div>
+<div class="logo">
+<img src="logo.png" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex'" style="height:42px">
+<div id="fallback-logo" class="logo-img" style="display:none">MF</div>
+Masani Finsure
+</div>
+<div class="nav">
+<a onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</a>
+<a onclick="document.getElementById('insurance').scrollIntoView({behavior:'smooth'})">Insurance</a>
+<a onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})">Calculator</a>
+<a href="tel:+918770202265">📞 8770202265</a>
+<a class="btn btn-orange" href="https://wa.me/918770202265?text=Hi%20Masani%20Finsure,%20Mujhe%20Insurance%20Quote%20Chahiye" target="_blank">Get Quote</a>
+<a class="btn btn-green" href="https://wa.me/918770202265" target="_blank">WhatsApp</a>
+</div>
 </div>
 
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"><div class="card-body"><h3>Health Insurance</h3><p>Family floater, cashless hospitals in Bhopal Indore. 5L to 1Cr cover.</p><div class="tag">₹500/mo se • Cashless</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400"><div class="card-body"><h3>Motor Insurance</h3><p>Car & Bike insurance, zero dep, 5 min me policy, roadside help.</p><div class="tag">Save 70% • Instant</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400"><div class="card-body"><h3>Term Insurance</h3><p>1 Cr cover sirf ₹500/mo, family secure after you.</p><div class="tag">1Cr @ ₹500/mo</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400"><div class="card-body"><h3>Business Insurance</h3><p>Shop, office, liability - small business special plans.</p><div class="tag">SME Special</div></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"><div class="card-body"><h3>LIC Jeevan Bima</h3><p>Endowment, pension, child education, retirement - long term saving.</p><div class="tag">Guaranteed Returns</div></div></div>
+<div id="insurance" class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400"><div class="card-body"><h3>Health Insurance</h3><p>Family floater, cashless hospitals in Bhopal Indore. 5L to 1Cr cover.</p><div style="font-size:11px;font-weight:700;margin-top:6px">₹500/mo se • Cashless</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400"><div class="card-body"><h3>Motor Insurance</h3><p>Car & Bike insurance, zero dep, 5 min me policy.</p><div style="font-size:11px;font-weight:700;margin-top:6px">Save 70% • Instant</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=400"><div class="card-body"><h3>Term Insurance</h3><p>1 Cr cover sirf ₹500/mo, family secure.</p><div style="font-size:11px;font-weight:700;margin-top:6px">1Cr @ ₹500/mo</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400"><div class="card-body"><h3>Business Insurance</h3><p>Shop, office, liability - small business special.</p><div style="font-size:11px;font-weight:700;margin-top:6px">SME Special</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"><div class="card-body"><h3>LIC Jeevan Bima</h3><p>Endowment, pension, child education, retirement.</p><div style="font-size:11px;font-weight:700;margin-top:6px">Guaranteed Returns</div></div></div>
 </div>
 
 <div class="main-grid">
-<div class="calc">
+<div id="calc" class="calc">
 <h2>🧮 Premium Calculator</h2><small>City select karo - Bhopal Indore Ujjain me alag premium</small>
-<label>Insurance Type</label><select><option>Health Insurance</option><option>Motor Insurance</option><option>Term Insurance</option></select>
-<label>City</label><select><option>Bhopal</option><option>Indore</option><option>Ujjain</option></select>
-<label>Age</label><input value="32">
-<label>Cover</label><select><option>₹10 Lakhs</option><option>₹20 Lakhs</option></select>
-<button class="calc-btn">Calculate Now →</button>
-<div style="text-align:center;margin-top:12px;font-weight:800">Estimated: ₹8,245 / year<br><small>WhatsApp pe bhejo</small></div>
+<label>Insurance Type</label><select id="insType"><option value="health">Health Insurance</option><option value="motor">Motor Insurance</option><option value="term">Term Insurance</option></select>
+<label>City</label><select id="city"><option value="bhopal">Bhopal</option><option value="indore">Indore</option><option value="ujjain">Ujjain</option></select>
+<label>Age</label><input id="age" type="number" value="32">
+<label>Cover</label><select id="cover"><option value="5">₹5 Lakhs</option><option value="10" selected>₹10 Lakhs</option><option value="20">₹20 Lakhs</option></select>
+<button class="calc-btn" onclick="calculate()">Calculate Now →</button>
+<div id="result" style="text-align:center;margin-top:12px;font-weight:800">Estimated: ₹8,245 / year<br><small>Calculate dabao</small></div>
+<button onclick="sendWhatsApp()" style="width:100%;background:#25D366;color:#fff;padding:10px;border:none;border-radius:8px;margin-top:10px;font-weight:700;cursor:pointer">WhatsApp pe Bhejo</button>
 </div>
 
-<div class="partners">
+<div class="calc">
 <h2>🤝 Our 28+ Insurance Partners</h2>
-<div class="partner-grid">
-<div class="p-box"><div class="p-logo" style="background:#0b3d91">LIC</div><div class="p-name">LIC India</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#e11d48">HDFC</div><div class="p-name">HDFC Life</div><div class="p-type">Life + Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#c2410c">ICICI</div><div class="p-name">ICICI Prudential</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#1e40af">SBI</div><div class="p-name">SBI Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#0f766e">BAJAJ</div><div class="p-name">Bajaj Allianz</div><div class="p-type">Life + General</div></div>
-<div class="p-box"><div class="p-logo" style="background:#7c3aed">TATA</div><div class="p-name">TATA AIA Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#be123c">MAX</div><div class="p-name">Max Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#a16207">KOTAK</div><div class="p-name">Kotak Life</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#0e7490">PNB</div><div class="p-name">PNB MetLife</div><div class="p-type">Life</div></div>
-<div class="p-box"><div class="p-logo" style="background:#15803d">STAR</div><div class="p-name">Star Health</div><div class="p-type">Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#0369a1">NIVA</div><div class="p-name">Niva Bupa</div><div class="p-type">Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#b45309">CARE</div><div class="p-name">Care Health</div><div class="p-type">Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#4d7c0f">ERGO</div><div class="p-name">HDFC Ergo</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#9d174d">LOMB</div><div class="p-name">ICICI Lombard</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#1d4ed8">TATA</div><div class="p-name">TATA AIG General</div><div class="p-type">General</div></div>
-<div class="p-box"><div class="p-logo" style="background:#6d28d9">SBI G</div><div class="p-name">SBI General</div><div class="p-type">General</div></div>
-<div class="p-box"><div class="p-logo" style="background:#047857">DIGIT</div><div class="p-name">Go Digit</div><div class="p-type">Motor + Health</div></div>
-<div class="p-box"><div class="p-logo" style="background:#000">ACKO</div><div class="p-name">Acko General</div><div class="p-type">Motor + Health</div></div>
-</div>
-<p style="margin-top:14px;font-size:11px;color:#64748b;text-align:center">Bhopal | Indore | Ujjain - Sabhi companies ke plans ek jagah compare karo</p>
+<div class="partner-grid" style="margin-top:14px">
+<div class="p-box"><div class="p-logo" style="background:#0b3d91">LIC</div><div style="font-size:12px;font-weight:700">LIC India</div><div style="font-size:10px;color:#64748b">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#e11d48">HDFC</div><div style="font-size:12px;font-weight:700">HDFC Life</div><div style="font-size:10px;color:#64748b">Life + Health</div></div>
+<div class="p-box"><div class="p-logo" style="background:#c2410c">ICICI</div><div style="font-size:12px;font-weight:700">ICICI Prudential</div><div style="font-size:10px;color:#64748b">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#1e40af">SBI</div><div style="font-size:12px;font-weight:700">SBI Life</div><div style="font-size:10px;color:#64748b">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#0f766e">BAJAJ</div><div style="font-size:12px;font-weight:700">Bajaj Allianz</div><div style="font-size:10px;color:#64748b">Life + General</div></div>
+<div class="p-box"><div class="p-logo" style="background:#7c3aed">TATA</div><div style="font-size:12px;font-weight:700">TATA AIA Life</div><div style="font-size:10px;color:#64748b">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#be123c">MAX</div><div style="font-size:12px;font-weight:700">Max Life</div><div style="font-size:10px;color:#64748b">Life</div></div>
+<div class="p-box"><div class="p-logo" style="background:#15803d">STAR</div><div style="font-size:12px;font-weight:700">Star Health</div><div style="font-size:10px;color:#64748b">Health</div></div>
 </div>
 </div>
 </div>
-<div class="footer">© 2024 Masani Finsure | Bhopal | Indore | Ujjain | Health ❤️ Motor 🚗 Term 👨‍👩‍👧‍👦 Business 🏢 LIC 📘 | 28+ Partners | 8770202265</div>
-<div class="w-float">W</div>
+
+<div class="footer">© 2024 Masani Finsure | Bhopal | Indore | Ujjain | 8770202265 | masani386.github.io/Masani-finsure-/</div>
+<a class="w-float" href="https://wa.me/918770202265" target="_blank">W</a>
+
+<script>
+let lastPremium = 8245;
+function calculate(){
+ let type=document.getElementById('insType').value;
+ let city=document.getElementById('city').value;
+ let age=parseInt(document.getElementById('age').value)||32;
+ let cover=parseInt(document.getElementById('cover').value)||10;
+ let base = type==='health'?5000:type==='motor'?3000:4000;
+ let cityFactor = city==='indore'?1.2:city==='bhopal'?1:0.9;
+ let ageFactor = 1 + (age-30)*0.03;
+ let premium = Math.round(base * cityFactor * ageFactor * (cover/10));
+ lastPremium = premium;
+ document.getElementById('result').innerHTML = `Estimated: ₹${premium.toLocaleString('en-IN')} / year<br><small>${type} - ${city} - ${cover}L Cover</small>`;
+}
+function sendWhatsApp(){
+ let type=document.getElementById('insType').value;
+ let city=document.getElementById('city').value;
+ let age=document.getElementById('age').value;
+ let cover=document.getElementById('cover').value;
+ let msg=`Hi Masani Finsure, Mujhe ${type} chahiye. City: ${city}, Age: ${age}, Cover: ${cover}L, Premium: ₹${lastPremium}`;
+ window.open(`https://wa.me/918770202265?text=${encodeURIComponent(msg)}`,'_blank');
+}
+calculate();
+</script>
 </body>
 </html>
