@@ -25,9 +25,17 @@
     .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e4eaf2;border-radius:17px;padding:23px;box-shadow:0 8px 24px #10233f08;transition:.2s;border-top:3px solid transparent}.card:hover{transform:translateY(-3px);border-top-color:var(--red);box-shadow:0 12px 32px #10233f14}
     .ico{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#e9f3fc,#d6e9ff);display:grid;place-items:center;font-size:1.55rem;margin-bottom:15px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{color:var(--muted);font-size:.94rem;margin:0 0 14px}.card ul{padding-left:19px;margin:8px 0 0;color:#445268;font-size:.9rem}
     .why{background:linear-gradient(180deg,#eaf1f8 0%,#f0f5fb 100%)}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.why-item{padding:22px;background:#fff;border-radius:14px;border-left:4px solid var(--gold);box-shadow:0 4px 12px #10233f06}.why-item strong{display:block;color:var(--navy);margin-bottom:6px}
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:start}.contact-box{background:#fff;border:1px solid #e3eaf2;border-radius:18px;padding:26px;box-shadow:0 8px 24px #10233f06}.contact-box h3{margin-top:0;color:var(--navy)}.contact-line{padding:10px 0;border-bottom:1px solid #edf1f5}.contact-line:last-child{border:0}.small{font-size:.88rem;color:var(--muted)}label{display:block;font-weight:700;font-size:.92rem;margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #ccd6e2;border-radius:9px;font:inherit;background:#fff;transition:.2s}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1769aa18;outline:none}textarea{min-height:95px;resize:vertical}form .btn{margin-top:15px;width:100%;border:0}
+    .contact-info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px}
+    .info-box{background:#fff;border:1px solid #e3eaf2;border-radius:14px;padding:18px;text-align:center;box-shadow:0 4px 12px #10233f06}
+    .info-box b{display:block;color:var(--navy);margin-bottom:4px}
+    .enquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+    .enquiry-box{background:#fff;border:1px solid #e3eaf2;border-radius:18px;padding:22px;box-shadow:0 8px 24px #10233f06;border-top:4px solid var(--navy)}
+    .enquiry-box.ins{border-top-color:#1a2f5a}.enquiry-box.rto{border-top-color:#1769aa}.enquiry-box.solar{border-top-color:#f57c00}.enquiry-box.cars{border-top-color:#e5392d}
+    .enquiry-box h3{margin:0 0 6px;color:var(--navy);display:flex;align-items:center;gap:8px}.enquiry-box p.small{margin:0 0 12px}
+    label{display:block;font-weight:700;font-size:.88rem;margin:10px 0 4px}input,select,textarea{width:100%;padding:11px;border:1px solid #ccd6e2;border-radius:8px;font:inherit;background:#fff;transition:.2s}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1769aa18;outline:none}textarea{min-height:80px;resize:vertical}form .btn{margin-top:14px;width:100%;border:0}
+    .small{font-size:.82rem;color:var(--muted)}
     footer{background:#0b192d;color:#d8e2ee;padding:28px 0;font-size:.9rem}footer .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.disclaimer{font-size:.8rem;color:#b8c6d7;margin-top:14px}
-    @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:11px}}
+    @media(max-width:900px){.contact-info{grid-template-columns:1fr}.enquiry-grid{grid-template-columns:1fr}.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}nav{gap:11px}}
     @media(max-width:480px){.hero{padding:48px 0}.cards{grid-template-columns:1fr}.quick{grid-template-columns:1fr 1fr}section{padding:46px 0}.btn{width:100%}.brand img{height:36px}}
   </style>
 </head>
@@ -39,7 +47,7 @@
       MASANI <span>FINSURE</span>
     </a>
     <nav aria-label="मुख्य नेविगेशन">
-      <a href="#services">Services</a><a href="#about">हमारे बारे में</a><a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#about">हमारे बारे में</a><a href="#contact">Enquiry</a>
     </nav>
   </div>
 </header>
@@ -52,7 +60,7 @@
         <p>Masani Finsure पर आपका स्वागत है। बीमा सेवाओं, वाहन दस्तावेज़ सहायता, सोलर समाधान और पुरानी कारों के बारे में जानकारी के लिए हमसे संपर्क करें।</p>
         <div class="actions">
           <a class="btn btn-gold" href="#services">हमारी सेवाएँ देखें</a>
-          <a class="btn btn-outline" href="#contact">संपर्क करें</a>
+          <a class="btn btn-outline" href="#contact">Enquiry करें</a>
         </div>
       </div>
       <aside class="hero-panel">
@@ -66,7 +74,7 @@
   </section>
   <section id="services">
     <div class="wrap">
-      <div class="section-head"><h2>हमारी सेवाएँ</h2><p>अपनी ज़रूरत चुनें और जानकारी या सहायता के लिए संपर्क करें। सेवाएँ उपलब्धता, पात्रता और लागू नियमों के अधीन हैं।</p></div>
+      <div class="section-head"><h2>हमारी सेवाएँ</h2><p>अपनी ज़रूरत चुनें और नीचे दिए गए फॉर्म में जानकारी भरें।</p></div>
       <div class="cards">
         <article class="card"><div class="ico">🛡️</div><h3>Insurance</h3><p>आपकी ज़रूरत के अनुसार बीमा विकल्प समझने में सहायता।</p><ul><li>Motor / Vehicle Insurance</li><li>Health Insurance</li><li>Life Insurance</li><li>General & Transit Insurance</li></ul></article>
         <article class="card"><div class="ico">🚘</div><h3>RTO Services</h3><p>वाहन और ड्राइविंग लाइसेंस से जुड़े कार्यों में सहायता।</p><ul><li>RC / Mobile update</li><li>Learning Licence & DL</li><li>Fitness, Permit, PUC</li><li>Tax, Name Transfer, HSRP</li></ul></article>
@@ -85,55 +93,91 @@
       </div>
     </div>
   </section>
+
   <section id="contact">
     <div class="wrap">
-      <div class="section-head"><h2>हमसे संपर्क करें</h2><p>नीचे अपना संदेश भरें। WhatsApp पर संदेश भेजने से पहले विवरण जाँच लें।</p></div>
-      <div class="contact-grid">
-        <div class="contact-box">
-          <h3>Contact Details</h3>
-          <div class="contact-line"><b>Business:</b> Masani Finsure</div>
-          <div class="contact-line"><b>Mobile / WhatsApp:</b> <span id="phoneText">अपना मोबाइल नंबर जोड़ें</span></div>
-          <div class="contact-line"><b>Email:</b> <span id="emailText">अपना बिज़नेस ईमेल जोड़ें</span></div>
-          <p class="small">वेबसाइट लाइव करने से पहले इस टेम्पलेट में अपना सही मोबाइल नंबर, ईमेल और ज़रूरत हो तो पता भरें।</p>
-          <a class="btn btn-blue" href="#enquiry">Enquiry भेजें</a>
+      <div class="section-head"><h2>हमसे संपर्क करें</h2><p>जिस सेवा के लिए पूछताछ करनी है, उसका फॉर्म भरें। सीधे WhatsApp पर संदेश जाएगा।</p></div>
+      
+      <div class="contact-info">
+        <div class="info-box"><b>📞 Mobile / WhatsApp</b> <a href="tel:8770202265">8770202265</a><br><a href="https://wa.me/918770202265" target="_blank">WhatsApp पर चैट करें</a></div>
+        <div class="info-box"><b>📧 Email</b> <a href="mailto:bestpolicy365@gmail.com">bestpolicy365@gmail.com</a></div>
+        <div class="info-box"><b>📍 Office Locations</b> Bhopal • Indore • Ujjain</div>
+      </div>
+
+      <div class="enquiry-grid">
+        <div class="enquiry-box ins">
+          <h3>🛡️ Insurance Enquiry</h3>
+          <p class="small">बीमा के लिए जानकारी भरें</p>
+          <form onsubmit="return sendEnquiry(event,'Insurance')">
+            <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
+            <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
+            <label>वाहन नंबर / पॉलिसी टाइप</label><input name="vehicle" placeholder="Ex: CG04 AB 1234">
+            <label>Insurance Type</label><select name="type"><option>Motor Insurance</option><option>Health Insurance</option><option>Life Insurance</option><option>Other</option></select>
+            <label>संदेश</label><textarea name="message" placeholder="अपनी ज़रूरत लिखें"></textarea>
+            <button class="btn btn-blue" type="submit">WhatsApp पर भेजें</button>
+          </form>
         </div>
-        <div class="contact-box" id="enquiry">
-          <h3>Enquiry Form</h3>
-          <form id="enquiryForm">
-            <label for="name">आपका नाम</label><input id="name" name="name" autocomplete="name" required placeholder="नाम लिखें">
-            <label for="service">किस सेवा के लिए संपर्क करना है?</label>
-            <select id="service" name="service"><option>Insurance</option><option>RTO Services</option><option>Solar Solutions</option><option>Used Cars</option><option>Other</option></select>
-            <label for="phone">मोबाइल नंबर</label><input id="phone" name="phone" inputmode="tel" required placeholder="अपना मोबाइल नंबर">
-            <label for="message">संदेश</label><textarea id="message" name="message" placeholder="अपनी ज़रूरत संक्षेप में लिखें"></textarea>
-            <button class="btn btn-blue" type="submit">WhatsApp पर Enquiry भेजें</button>
-            <p class="small">यह फॉर्म जानकारी किसी सर्वर पर सेव नहीं करता; यह आपके WhatsApp में संदेश तैयार करता है।</p>
+        <div class="enquiry-box rto">
+          <h3>🚘 RTO Enquiry</h3>
+          <p class="small">RTO कार्य के लिए जानकारी भरें</p>
+          <form onsubmit="return sendEnquiry(event,'RTO Services')">
+            <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
+            <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
+            <label>RC नंबर</label><input name="vehicle" placeholder="Ex: CG04 AB 1234">
+            <label>कौन सा काम?</label><select name="type"><option>RC Transfer</option><option>Learning Licence / DL</option><option>Fitness / Permit / PUC</option><option>Tax / Name Transfer / HSRP</option><option>Other</option></select>
+            <label>संदेश</label><textarea name="message" placeholder="काम की जानकारी"></textarea>
+            <button class="btn btn-blue" type="submit">WhatsApp पर भेजें</button>
+          </form>
+        </div>
+        <div class="enquiry-box solar">
+          <h3>☀️ Solar Enquiry</h3>
+          <p class="small">सोलर के लिए जानकारी भरें</p>
+          <form onsubmit="return sendEnquiry(event,'Solar Solutions')">
+            <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
+            <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
+            <label>जगह / शहर</label><input name="vehicle" placeholder="Ex: Bhopal / Indore / Ujjain">
+            <label>कितने kW चाहिए?</label><select name="type"><option>1kW - 3kW</option><option>3kW - 5kW</option><option>5kW - 10kW</option><option>10kW+</option></select>
+            <label>औसत बिजली बिल</label><input name="bill" placeholder="Ex: 3000 Rs/month">
+            <button class="btn btn-blue" style="background:#f57c00" type="submit">WhatsApp पर भेजें</button>
+          </form>
+        </div>
+        <div class="enquiry-box cars">
+          <h3>🔑 Used Cars Enquiry</h3>
+          <p class="small">पुरानी कार के लिए जानकारी भरें</p>
+          <form onsubmit="return sendEnquiry(event,'Used Cars')">
+            <label>आपका नाम</label><input name="name" required placeholder="नाम लिखें">
+            <label>मोबाइल नंबर</label><input name="phone" required placeholder="मोबाइल नंबर">
+            <label>खरीदना है / बेचना है?</label><select name="vehicle"><option>Car खरीदना है</option><option>Car बेचना है</option></select>
+            <label>Car Model / Budget</label><input name="type" placeholder="Ex: Swift, 4 Lakh">
+            <label>संदेश</label><textarea name="message" placeholder="गाड़ी की डिटेल"></textarea>
+            <button class="btn btn-blue" style="background:#e5392d" type="submit">WhatsApp पर भेजें</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 </main>
-<footer><div class="wrap"><div class="foot"><b>MASANI FINSURE</b><span>Insurance • RTO • Solar • Used Cars</span><span>© <span id="year"></span> Masani Finsure</span></div><p class="disclaimer">महत्वपूर्ण: यह जानकारी और पूछताछ के लिए वेबसाइट है, आधिकारिक सरकारी पोर्टल नहीं। बीमा जारी होना, सोलर इंस्टॉलेशन, वाहन उपलब्धता और RTO कार्य संबंधित कंपनी/अधिकृत विभाग के नियमों, दस्तावेज़ों और स्वीकृति पर निर्भर हैं।</p></div></footer>
+<footer><div class="wrap"><div class="foot"><b>MASANI FINSURE</b><span>Insurance • RTO • Solar • Used Cars</span><span>Bhopal | Indore | Ujjain | Mobile: 8770202265 | bestpolicy365@gmail.com</span><span>© <span id="year"></span> Masani Finsure</span></div><p class="disclaimer">महत्वपूर्ण: यह जानकारी और पूछताछ के लिए वेबसाइट है, आधिकारिक सरकारी पोर्टल नहीं।</p></div></footer>
 <script>
-  const WHATSAPP_NUMBER = "91XXXXXXXXXX";
-  const BUSINESS_PHONE = "अपना मोबाइल नंबर जोड़ें";
-  const BUSINESS_EMAIL = "अपना बिज़नेस ईमेल जोड़ें";
-  document.getElementById("phoneText").textContent = BUSINESS_PHONE;
-  document.getElementById("emailText").textContent = BUSINESS_EMAIL;
+  const WHATSAPP_NUMBER = "918770202265";
   document.getElementById("year").textContent = new Date().getFullYear();
-  document.getElementById("enquiryForm").addEventListener("submit", function(e){
+  function sendEnquiry(e, service){
     e.preventDefault();
-    if (WHATSAPP_NUMBER.includes("X")) {
-      alert("पहले index.html में WHATSAPP_NUMBER में अपना सही नंबर country code सहित भरें।");
-      return;
-    }
-    const name = document.getElementById("name").value.trim();
-    const service = document.getElementById("service").value;
-    const phone = document.getElementById("phone").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const text = `Namaste Masani Finsure,%0AName: ${encodeURIComponent(name)}%0AService: ${encodeURIComponent(service)}%0AMobile: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+    const f = e.target;
+    const name = f.querySelector('[name=name]').value.trim();
+    const phone = f.querySelector('[name=phone]').value.trim();
+    const vehicle = f.querySelector('[name=vehicle]') ? f.querySelector('[name=vehicle]').value.trim() : '';
+    const type = f.querySelector('[name=type]') ? f.querySelector('[name=type]').value.trim() : '';
+    const bill = f.querySelector('[name=bill]') ? f.querySelector('[name=bill]').value.trim() : '';
+    const message = f.querySelector('[name=message]') ? f.querySelector('[name=message]').value.trim() : '';
+    let text = `Namaste Masani Finsure,%0A*Service:* ${encodeURIComponent(service)}%0A*Name:* ${encodeURIComponent(name)}%0A*Mobile:* ${encodeURIComponent(phone)}`;
+    if(vehicle) text += `%0A*Details:* ${encodeURIComponent(vehicle)}`;
+    if(type) text += `%0A*Type:* ${encodeURIComponent(type)}`;
+    if(bill) text += `%0A*Bill:* ${encodeURIComponent(bill)}`;
+    if(message) text += `%0A*Message:* ${encodeURIComponent(message)}`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank", "noopener");
-  });
+    return false;
+  }
 </script>
 </body>
 </html>
